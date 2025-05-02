@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project movie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+   
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+   
+</head> 
+<body>
+  <section class="head" id="head">
+    <header>
+     
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="#home" class="logo">
+           <img src="images/net.jpg" alt=""></i>Movies
+          </a>
+         
+          <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">coming</a></li>
+           
+
+          </ul>
+
+          <div class="watchlist">
+            <h2>watchlist</h2>
+            <div class="wishlist-content">
+
+              <div class="wish-box">
+              
+              </div>
+            </div>
+            <i class='bx bx-x' id="close-list"></i>
+            
+
+             
+
+
+
+
+
+          
+          </div>
+
+         
+                  
+               
+                    
+            <input type="text" name="" id="find"  placeholder="search..."onkeyup="search()">
+
+
+                  
+                
+                   
+                  
+                   <div class="list"onclick="myFunction2()"> My List</div>
+                
+
+
+              
+                
+             
+             
+    
+
+            
+           
+             
+            
+
+         
+          
+
+
+         
+         
+        
+         <button class="btn" onclick="window.location.href='signup.html';">
+            <a href="#">Sign In</a>
+         </button> 
+
+         <div class="side">
+              
+                
+           
+          <div class="logo1">
+              <h2>Netflix</h2>
+          </div>
+          
+          <div class="menu-bar">
+              <h3>Menu</h3>
+          </div>
+
+          <div class="search_bar">
+            <form action="#">
+           <i class='bx bx-search'></i> 
+                
+                <input  type="text" id="input-box" onkeyup="myFunction1()" placeholder="search..">
+            </form>
+
+        </div>
+  
+  
+          <div class="icon-items">
+              <ul id="myMenu">
+            
+               
+               <li>
+                  <i class='bx bxs-home' ></i>  
+                  
+                   <a href="#">Home</a>
+               </li>
+  
+               <li>
+                   <i class='bx bxs-user-detail' ></i>
+                   <a href="#">User</a>
+               </li>
+               <li>
+                <i class='bx bx-category-alt'></i>
+                   <a href="#">Categories</a>
+               </li>
+               <li>
+                   <i class='bx bx-signal-3' ></i>
+                   <a href="#">Activity</a>
+               </li>
+  
+               <li>
+                <i class='bx bx-layer'></i>
+                   <a href="#">Subscribe</a>
+               
+               </li>
+               <li>
+                   <i class='bx bx-bell' ></i>
+                   <a href="#">Notification</a>
+               </li>
+               <li>
+                   <i class='bx bxs-group' ></i>
+                   <a href="#">Group</a>
+               </li>
+               <li>
+                   <i class='bx bxs-help-circle' ></i>
+                   <a href="#">Help</a>
+               </li>
+               <li>
+                   <i class='bx bxs-cog' ></i>
+                   <a href="#">Setting</a>
+               </li>
+               <li>
+                   <i class='bx bxs-log-out' ></i>
+                   <a href="#">Logout</a>
+               </li>
+               <li>
+                <i class='bx bxl-sketch'></i>
+                <a href="signup.html">SignUp</a>
+
+               </li>
+              </ul>
+           </div>
+
+           <i class='bx bx-x' id="close-cart"></i>
+     
+         </div>
+         
+
+
+
+    </header>
+    </section>
+    
+
+    <section class="home swiper" id="home">
+
+        <div class="swiper-wrapper">
+           
+            <div class="swiper-slide container">
+                <img src="images/spider1.jpg" alt="">
+                <div class="home-text">
+                    <span>Spider Universe</span>
+                    <h1>Spiderman: <br>Home Coming</h1>
+                  <button class="btn1">
+                    <a href="#">Book Now</a>
+
+                  </button>
+                  <button class="btn1" >
+                    <a href="#">Play Now</a>
+
+                  </button>  
+                    
+                   
+                    
+                 
+                </div>
+
+
+            </div>
+            <div class="swiper-slide container">
+              <img src="images/avatar2.jpg" alt="">
+              <div class="home-text">
+                  <span>JAMES's Universe</span>
+                  <h1>Avatar:The Way <br> Of Water</h1>
+                 <button class="btn1">
+                  <a href="#">Book Now</a>
+                 </button> 
+                 <button class="btn1">
+                  <a href="#">Play Now</a>
+
+                 </button>
+                
+                  
+              </div>
+
+
+          </div>
+            <div class="swiper-slide container">
+                <img src="images/john.jpg" alt="">
+                <div class="home-text">
+                    <span>Drama & Advventure</span>
+                    <h1>Game Of<br>Thrones</h1>
+                  <button class="btn1">
+                    <a href="#">Book Now</a>
+                  </button> 
+                  <button class="btn1">
+                    <a href="#">Play Now</a>
+
+                  </button> 
+                  
+                    
+                </div>
+
+
+            </div>
+            <div class="swiper-slide container">
+                <img src="images/ferari.jpg" alt="">
+                <div class="home-text">
+                    <span>Racing Verse</span>
+                    <h1>Fast And<br>Furious</h1>
+                  <button class="btn1">
+                    <a href="#">Book Now</a>
+                  </button> 
+                  <button class="btn1">
+                    <a href="#">Play Now</a>
+
+                  </button> 
+                  
+                    
+                </div>
+
+
+            </div>
+           
+                </div>
+
+
+            
+            
+            <div class="swiper-pagination"></div>
+
+    </section>
+
+    <section class="Movies" id="movies">
+      <h2 class="heading">Opening This Week</h2>
+      
+      <div class="movies-container">
+        <div class="ox">
+          <div class="box"onclick="window.location.href='movie1.html';">
+            <div class="box-image">
+              <img src="images/marvel1.jpg" alt="" class="pro-img">
+            </div>
+            <h3 class="movie-tittle">The Avenger</h3>
+            <span>120 mins | sci-fi</span>
+            <br>
+             
+     
+          
+        
+       
+          
+  
+          </div>
+
+        <button class="wish">Add To Wishlist</button>
+         
+
+        </div>
+       
+        
+        <div class="ox">
+        <div class="box"onclick="window.location.href='movie2.html';">
+         
+          <div class="box-image">
+            <img src="images/deathrider.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Ghost Rider</h3>
+          <span>149 mins |Adven,Horror</span>
+
+        </div>
+        <button class="wish">Add To Wishlist</button>
+         
+       </div>
+       <div class="ox">
+
+        <div class="box"onclick="window.location.href='movie3.html';">
+          <div class="box-image">
+            <img src="images/dune2.jpg" alt=""  class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Dune 2</h3>
+          <span>120 mins | sci-fi | Adv</span>
+
+        </div>
+        <button class="wish">Add To Wishlist</button>
+        </div>
+      
+          
+        <div class="ox">
+        <div class="box"onclick="window.location.href='movie4.html';">
+          <div class="box-image">
+            <img src="images/panther1.jpg" alt=""  class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Black Panther</h3>
+          <span>120 mins |sci-fi,Advventure</span>
+
+        </div>
+        <button class="wish">Add To Wishlist</button>
+      </div>
+
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie5.html';">
+          <div class="box-image">
+            <img src="images/ca1.jpg" alt=""  class="pro-img">
+          </div>
+          <h3 class="movie-tittle">The Captain America</h3>
+          <span>120 mins |Adventure,History</span>
+
+        </div>
+        <button class="wish">Add To Wishlist</button>
+      </div>
+
+       
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie6.html';">
+          <div class="box-image">
+            <img src="images/avatar4.jpg" alt=""  class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Avatar</h3>
+          <span>120 mins |adventure</span>
+
+        </div>
+        <button class="wish">Add To Wishlist</button>
+      </div>
+       
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie7.html';">
+          <div class="box-image">
+            <img src="images/thor1.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Thor:The Dark World</h3>
+          <span>135 mins |Fantasy</span>
+
+        </div>
+        <button class="wish">Add To Wishlist</button>
+      </div>
+       
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie8.html';">
+          <div class="box-image">
+            <img src="images/lost.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Lost:In Huminity</h3>
+          <span>120 mins |Real Story</span>
+
+        </div>
+        <button class="wish">Add To Wishlist</button>
+      </div>
+       
+
+      
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie9.html';">
+          <div class="box-image">
+            <img src="images/dr.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Dr Strange</h3>
+          <span>120 mins | sci-fi,Fantasy</span>
+
+        </div>
+        <button class="wish">Add To Wishlist</button>
+      </div>
+        
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie10.html';">
+          <div class="box-image">
+            <img src="images/sha.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Shadow & Bone
+          </h3>
+          <span>140 mins |Marvel Uni</span>
+
+        </div>
+        <button class="wish">Add To Wishlist</button>
+      </div>
+
+
+      </div>
+
+    </section>
+
+    <section class="coming" id="coming">
+      <h2 class="heading">COMING SOON</h2>
+       
+
+
+      <div class=" swiper coming-container">
+        
+      
+        <div class="swiper-wrapper">
+        <div class=" swiper-slide box"onclick="window.location.href='movie11.html';">
+          <div class="box-image">
+            <img src="images/money.jpg" alt="">
+          </div>
+          <h3>Money Heist</h3>
+          <span>120 mins |crime Thriller</span>
+
+        </div>
+
+        <div class="swiper-slide box"onclick="window.location.href='movie12.html';">
+          <div class="box-image">
+            <img src="images/vk.jpg" alt="">
+          </div>
+          <h3>V I K I N G S</h3>
+          <span>120 mins |Adventure</span>
+
+        </div>
+
+        <div class=" swiper-slide box"onclick="window.location.href='movie13.html';">
+          <div class="box-image">
+            <img src="images/pt.jpg" alt="">
+          </div>
+          <h3>Pathan</h3>
+          <span>150 mins |patriotic</span>
+
+        </div>
+        <div class="swiper-slide box"onclick="window.location.href='movie14.html';">
+          <div class="box-image">
+            <img src="images/pk.jpg" alt="">
+          </div>
+          <h3>PK</h3>
+          <span>120 mins |Social</span>
+
+        </div>
+        <div class="swiper-slide box"onclick="window.location.href='movie15.html';">
+          <div class="box-image">
+            <img src="images/tum.jpg" alt="">
+          </div>
+          <h3>Tumbad</h3>
+          <span>132 mins |Horro|Greed</span>
+
+        </div>
+        <div class="swiper-slide box"onclick="window.location.href='movie16.html';">
+          <div class="box-image">
+            <img src="images/dare.jpg" alt="">
+          </div>
+          <h3>Tumbad</h3>
+          <span>132 mins |Horro|Greed</span>
+
+        </div>
+        <div class="swiper-slide box"onclick="window.location.href='movie17.html';">
+          <div class="box-image">
+            <img src="images/iron man.jpg" alt="">
+          </div>
+          <h3>Iron Man</h3>
+          <span>132 mins |Horro|Greed</span>
+
+        </div>
+        <div class="swiper-slide box"onclick="window.location.href='movie18.html';">
+          <div class="box-image">
+            <img src="images/bdy.jpg" alt="">
+          </div>
+          <h3>Bodyguard</h3>
+          <span>132 mins |Horro|Greed</span>
+
+        </div>
+        <div class=" swiper-slide box"onclick="window.location.href='movie19.html';">
+          <div class="box-image">
+            <img src="images/ce.jpg" alt="">
+          </div>
+          <h3>Chennai Express</h3>
+          <span>120 mins |comedy</span>
+
+        </div>
+        <div class=" swiper-slide box"onclick="window.location.href='movies20.html';">
+          <div class="box-image">
+            <img src="images/munna.jpg" alt="">
+          </div>
+          <h3>Munna Bhai M.B.B.S</h3>
+          <span>120 mins |Social</span>
+
+        </div>
+
+
+
+       </div>
+       <!--
+       
+      
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-pagination"></div>
+      -->
+       
+
+       
+       
+        
+       
+        
+     
+     
+    </div>
+     </section>
+
+
+
+    <section class="fav" id="fav">
+      <h4 class="roman">Romantic Movie</h4>
+
+    <div class="fav-container">
+      <div class="ox">
+      <div class="card"onclick="window.location.href='movie21.html';">
+        <div class="card-img">
+          <img src="images/veer.jpg" alt="" class="pro-img">
+        </div>
+        <h3 class="movie-tittle">Veer Zara</h3>
+        <span>128 min | Romance</span>
+
+      </div>
+      <button class="wish">Add To Watchlist</button>
+      </div>
+      <div class="ox">
+      <div class="card"onclick="window.location.href='movie22.html';">
+        <div class="card-img">
+          <img src="images/ramleela.jpg" alt="" class="pro-img">
+        </div>
+        <h3 class="movie-tittle">Ram Leela</h3>
+        <span>128 min | Romance</span>
+
+      </div>
+      <button class="wish">Add To Watchlist</button>
+    </div>
+    <div class="ox">
+      <div class="card"onclick="window.location.href='movie23.html';">
+        <div class="card-img">
+          <img src="images/kal.jpg" alt="" class="pro-img">
+        </div>
+        <h3 class="movie-tittle">Kal Ho Na Ho</h3>
+        <span>128 min |Romance</span>
+
+      </div>
+      <button class="wish">Add To Watchlist</button>
+    </div>
+    <div class="ox">
+
+      <div class="card"onclick="window.location.href='movie24.html';">
+        <div class="card-img">
+          <img src="images/ham.jpg" alt="" class="pro-img">
+        </div>
+        <h3 class="movie-tittle">Hum tumhare hai sanam</h3>
+        <span>156 min | Romance</span>
+
+      </div>
+      <button class="wish">Add To Watchlist</button>
+    </div>
+    <div class="ox">
+      <div class="card"onclick="window.location.href='movie25.html';">
+        <div class="card-img">
+          <img src="images/rab.jpg" alt="" class="pro-img">
+        </div>
+        <h3 class="movie-tittle">Rab ne bana di jodi</h3>
+        <span>158 min |Classic</span>
+
+      </div>
+      <button class="wish">Add To Watchlist</button>
+    </div>
+      
+
+    </div>
+    </section>
+    <section class="action" id="action">
+      <h4 class="heading1"> ACTION & THRILER</h4>
+
+      <div class="action-container">
+        <div class="ox">
+        <div class="card"onclick="window.location.href='movie26.html';">
+          <div class="card-img">
+            <img src="images/jjj.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Jawan</h3>
+          <span> 2h 10min | Action-crime</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+      <div class="ox">
+        <div class="card"onclick="window.location.href='movie27.html';">
+          <div class="card-img">
+            <img src="images/dare1.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Dare Devil</h3>
+          <span> 2h 10min | Action-Thriller</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+      <div class="ox">
+        <div class="card"onclick="window.location.href='movie28.html';">
+          <div class="card-img">
+            <img src="images/johnwick.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">John Wick</h3>
+          <span> 2h 10min | Action-crime</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+
+
+
+        <div class="ox">
+
+        <div class="card"onclick="window.location.href='movie29.html';">
+          <div class="card-img">
+            <img src="images/spiderman.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Spider Man</h3>
+          <span> 2h 10min | Action-crime</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+      <div class="ox">
+
+        <div class="card"onclick="window.location.href='movie30.html';">
+          <div class="card-img">
+            <img src="images/inc.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Inception</h3>
+          <span> 2h 10min |crime & Thriller</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+      </div>
+
+    </section>
+
+    <section class="Imdb" id="imdb">
+      <h2 class="heading">IMDB RATINGS</h2>
+      <div class="imdb-container">
+        <div class="ox">
+        <div class="box"onclick="window.location.href='movie31.html';">
+          <div class="box-image">
+            <img src="images/mnik.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">MYy Name Is Khan</h3>
+          <span>145 mins |Romance/Adven</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie32.html';">
+          <div class="box-image">
+            <img src="images/inters.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Intersteller</h3>
+          <span>120 mins sci-fi</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie33.html';">
+          <div class="box-image">
+            <img src="images/dark1.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">Dark</h3>
+          <span>120 mins |Thriller</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie34.html';">
+          <div class="box-image">
+            <img src="images/witcher.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">The Witcher</h3>
+          <span>120 mins |Horror/Adven</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+      <div class="ox">
+        <div class="box"onclick="window.location.href='movie35.html';">
+          <div class="box-image">
+            <img src="images/marvel.jpg" alt="" class="pro-img">
+          </div>
+          <h3 class="movie-tittle">The Avenger</h3>
+          <span>120 mins | sci-fi</span>
+
+        </div>
+        <button class="wish">Add To Watchlist</button>
+      </div>
+        </div>
+
+    </section>
+
+    <div class="entire-container">
+      <div class="entire-content">
+          <div class="entire-leftbox">
+              <img src="images/netflixx.jpg" loading="lazy" alt="wall">
+          </div>
+          <div class="entire-rightbox">
+              <div class="entire-info">
+                  <h2>Get The Latest Update</h2>
+                  <p>Sign up for our Newsletter</p>
+              </div>
+              <form class="form1">
+                  
+                  <input class="new-email" placeholder=" Enter your email..">
+
+                <button class="last">send</button>
+              </form>
+              <div class="last-para">
+              
+                      By signing up to our newsletter you agree to our
+                      <a href="#">Terms of service</a>
+                      and 
+                      <a href="#"> privacy Policy.</a>
+                      
+                      
+                   
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  <div class="footer-container">
+    
+      <h2 class="footer-heading">All About Having Fun</h2>
+      <div class="footer-grid">
+          <div class="footer-logo">
+              <img src="images/insta1.jpg" class="svg-img"/>
+              <span class="logo-text">Instagram</span>
+          </div>
+          <div class="footer-logo">
+              <img src="images/lk1.jpg" class="svg-img"/>
+              <span class="logo-text">linkedin</span>
+          </div>
+          <div class="footer-logo">
+              <img src="images/tw.jpg" class="svg-img"/>
+              <span class="logo-text">Twitter</span>
+          </div>
+          <div class="footer-logo">
+              <img src="images/yt1.jpg" class="svg-img"/>
+              <span class="logo-text">You Tube</span>
+          </div>
+          
+         
+        
+      </div>
+  
+
+
+  </div>
+  <div class="para">
+    <p class="para">&#169 All right reserved to Azhar Coding</p>
+  </div>
+   
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ 
+   <script src="index.js"></script> 
+   <!--
+  
+   <script>
+    let menu = document.querySelector('#menu-icon')
+    let sideBar = document.querySelector('.side')
+    let closeCart = document.querySelector('#close-cart')
+  
+    menu.onclick = function() {
+        sideBar.classList.add("active");
+
+    }
+    closeCart.onclick = function() {
+        sideBar.classList.remove("active");
+
+    };
+    
+   
+
+</script>
+-->
+  
+
+<script>
+   function myFunction1(){
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("input-box");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById('myMenu');
+    li = ul.getElementsByTagName("li");
+    for(i = 0; i< li.length; i++){
+      a = li[i].getElementsByTagName("a")[0];
+      if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
+        li[i].style.display = "";
+      }
+      else{
+        li[i].style.display = "none";
+      }
+    }
+   }
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
